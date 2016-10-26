@@ -1,15 +1,15 @@
 {
   "name": "materialette-ibm-colors",
-  "productName": "Materialette-IBM",
+  "productName": "IBM-Color-Palette",
   "version": "1.0.0",
   "description": "Material Color Palette for macOS, Windows, and Linux - forked to use IBM Colors instead",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
     "build": "npm run build:macos && npm run build:linux && npm run build:windows",
-    "build:macos": "electron-packager . --overwrite --asar --out=dist --platform=darwin --app-bundle-id=com.mikeschultz.materialette --icon=assets/materialette.icns --app-version=${npm_package_version} && cd dist/Materialette-darwin-x64 && zip -ryXq9 ../Materialette-macOS-${npm_package_version}.zip Materialette.app",
-    "build:linux": "electron-packager . --overwrite --asar --out=dist --platform=linux --app-bundle-id=com.mikeschultz.materialette --icon=assets/materialette.icns --app-version=${npm_package_version} && cd dist/Materialette-linux-x64/ && zip -ryq9 ../Materialette-linux-${npm_package_version}.zip *",
-    "build:windows": "electron-packager . --overwrite --asar --out=dist  --prune --platform=win32 --arch=ia32 --icon=assets/materialette.ico --version-string.ProductName=${npm_package_productName} --app-version=${npm_package_version} && cd dist/Materialette-win32-ia32 && zip -ryXq9 ../Materialette-windows-${npm_package_version}.zip *"
+    "build:macos": "electron-packager . --overwrite --asar --out=dist --platform=darwin --app-bundle-id=com.tomratcliffe.ibmcolorpalette --icon=assets/materialette.icns --app-version=${npm_package_version} && cd dist/${npm_package_productName}-darwin-x64 && zip -ryXq9 ../${npm_package_productName}-macOS-${npm_package_version}.zip ${npm_package_productName}.app",
+    "build:linux": "electron-packager . --overwrite --asar --out=dist --platform=linux --app-bundle-id=com.tomratcliffe.ibmcolorpalette --icon=assets/materialette.icns --app-version=${npm_package_version} && cd dist/${npm_package_productName}-linux-x64/ && zip -ryq9 ../${npm_package_productName}-linux-${npm_package_version}.zip *",
+    "build:windows": "electron-packager . --overwrite --asar --out=dist  --prune --platform=win32 --arch=ia32 --icon=assets/materialette.ico --version-string.ProductName='${npm_package_productName}' --app-version=${npm_package_version} && cd dist/${npm_package_productName}-win32-ia32 && zip -ryXq9 ../${npm_package_productName}-windows-${npm_package_version}.zip *"
   },
   "keywords": [
     "material",
@@ -19,13 +19,13 @@
   "url": "https://github.com/mike-schultz",
   "license": "MIT",
   "dependencies": {
+    "ibm-design-colors": "^1.8.0"
   },
   "devDependencies": {
     "electron": "^1.4.3",
     "electron-packager": "^8.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^2.3.2",
-    "ibm-design-colors": "^1.8.0"
+    "gulp-sass": "^2.3.2"
   }
 }

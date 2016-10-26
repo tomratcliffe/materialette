@@ -14,7 +14,7 @@ const contextMenu = electron.Menu.buildFromTemplate([{
   label: 'About',
   click() {
     electron.dialog.showMessageBox({
-      title: "Materialette",
+      title: "IBM Color Palette",
       type: "info",
       message: "Material Color Palette for macOS, Windows, and Linux",
       buttons: ["Close"]
@@ -23,7 +23,7 @@ const contextMenu = electron.Menu.buildFromTemplate([{
 }, {
   label: 'Website',
   click() {
-    electron.shell.openExternal("https://github.com/mike-schultz/materialette");
+    electron.shell.openExternal("https://github.com/tomratcliffe/materialette");
   }
 }, {
   type: 'separator'
