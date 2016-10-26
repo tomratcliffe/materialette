@@ -1,8 +1,8 @@
 {
-  "name": "materialette",
-  "productName": "Materialette",
-  "version": "1.2.0",
-  "description": "Material Color Palette for macOS, Windows, and Linux",
+  "name": "materialette-ibm-colors",
+  "productName": "Materialette-IBM",
+  "version": "1.0.0",
+  "description": "Material Color Palette for macOS, Windows, and Linux - forked to use IBM Colors instead",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
@@ -25,6 +25,7 @@
     "electron-packager": "^8.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "ibm-design-colors": "^1.8.0"
   }
 }
