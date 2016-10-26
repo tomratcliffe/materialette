@@ -1,4 +1,3 @@
-const CONTAINER_WIDTH = 370;
 /* jshint esnext: true */
 /* jshint node: true */
 /* global document */
@@ -18,6 +17,7 @@ for(var color in ibmColors) {
 }
 
 
+const CONTAINER_WIDTH = 290;
 const TOOLTIP_WIDTH = 140;
 const TOOLTIP_HEIGHT = 40;
 const State = {

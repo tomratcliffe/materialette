@@ -4,8 +4,8 @@ const { Tray, BrowserWindow, app } = electron;
 // App Variables
 const App = {
   name: 'Materialette',
-  width: 370,
-  height: 410,
+  width: 290,
+  height: 390,
   icon: __dirname + '/assets/IconTemplate.png',
   entry: __dirname + '/index.html'
 };
