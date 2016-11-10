@@ -22,7 +22,7 @@
     "ibm-design-colors": "^1.8.0"
   },
   "devDependencies": {
-    "electron": "^1.4.3",
+    "electron": "^1.4.6",
     "electron-packager": "^8.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
